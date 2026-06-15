@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T20:01:35.184Z",
+  "generatedAt": "2026-06-15T22:28:28.273Z",
   "totals": {
     "agentsOnline": 5,
     "leads": 567,
@@ -14,22 +14,22 @@
       "activity": [
         {
           "text": "Meta Ads Monitor → success",
-          "when": "9h ago",
+          "when": "11h ago",
           "status": "completed"
         },
         {
           "text": "Meta Ads Monitor — Catalyst → success",
-          "when": "9h ago",
+          "when": "12h ago",
           "status": "completed"
         },
         {
           "text": "Meta Ads Monitor → success",
-          "when": "1d ago",
+          "when": "2d ago",
           "status": "completed"
         },
         {
           "text": "Meta Ads Monitor — Catalyst → success",
-          "when": "1d ago",
+          "when": "2d ago",
           "status": "completed"
         }
       ],
@@ -44,7 +44,7 @@
       "metrics": [
         {
           "k": "Last report",
-          "v": "9h ago"
+          "v": "12h ago"
         },
         {
           "k": "Last result",
@@ -118,7 +118,7 @@
         },
         {
           "k": "Last scrape",
-          "v": "12h ago"
+          "v": "15h ago"
         }
       ],
       "trend": [
@@ -182,17 +182,17 @@
       "activity": [
         {
           "text": "LinkedIn: financial advisor · Singapore → failed",
-          "when": "12h ago",
+          "when": "15h ago",
           "status": "failed"
         },
         {
           "text": "financial advisors · Singapore → 46 leads",
-          "when": "17h ago",
+          "when": "19h ago",
           "status": "completed"
         },
         {
           "text": "property agents · Singapore → 19 leads",
-          "when": "18h ago",
+          "when": "20h ago",
           "status": "completed"
         },
         {
