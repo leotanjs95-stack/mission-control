@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T11:22:55.802Z",
+  "generatedAt": "2026-06-15T16:25:10.830Z",
   "totals": {
     "agentsOnline": 5,
     "leads": 567,
@@ -14,12 +14,12 @@
       "activity": [
         {
           "text": "Meta Ads Monitor → success",
-          "when": "4m ago",
+          "when": "5h ago",
           "status": "completed"
         },
         {
           "text": "Meta Ads Monitor — Catalyst → success",
-          "when": "27m ago",
+          "when": "5h ago",
           "status": "completed"
         },
         {
@@ -44,7 +44,7 @@
       "metrics": [
         {
           "k": "Last report",
-          "v": "27m ago"
+          "v": "5h ago"
         },
         {
           "k": "Last result",
@@ -118,7 +118,7 @@
         },
         {
           "k": "Last scrape",
-          "v": "3h ago"
+          "v": "9h ago"
         }
       ],
       "trend": [
@@ -182,17 +182,17 @@
       "activity": [
         {
           "text": "LinkedIn: financial advisor · Singapore → failed",
-          "when": "3h ago",
+          "when": "9h ago",
           "status": "failed"
         },
         {
           "text": "financial advisors · Singapore → 46 leads",
-          "when": "8h ago",
+          "when": "13h ago",
           "status": "completed"
         },
         {
           "text": "property agents · Singapore → 19 leads",
-          "when": "9h ago",
+          "when": "14h ago",
           "status": "completed"
         },
         {
@@ -207,7 +207,7 @@
         },
         {
           "text": "dental clinic · Singapore → 0 leads",
-          "when": "82d ago",
+          "when": "83d ago",
           "status": "completed"
         }
       ]
