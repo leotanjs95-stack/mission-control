@@ -156,10 +156,20 @@ const pj = staticAgent({
     { k: "Run it", v: '"PJ, make a 9:16 ad"' },
   ],
 });
+const warren = staticAgent({
+  id: "warren", name: "Warren", role: "Web Developer", skill: "Web Development", accent: "warren",
+  mode: "ond", modeLabel: "✋ On-demand · ask Claude", status: "Ready",
+  metrics: [
+    { k: "Builds", v: "Web apps · sites · tools" },
+    { k: "Stack", v: "Next.js · React · APIs" },
+    { k: "Hosts", v: "Lovable · Vercel · Pages" },
+    { k: "Run it", v: '"Warren, build/fix …"' },
+  ],
+});
 
 (async () => {
   const [gem, nova] = await Promise.all([buildGem(), buildNova()]);
-  const agents = [gem, cher, nova, pj];
+  const agents = [gem, cher, nova, pj, warren];
   const novaLeads = Number(nova.metrics?.find((m) => m.k === "Leads captured")?.v || 0);
   const novaScrapes = Number(nova.metrics?.find((m) => m.k === "Completed scrapes")?.v || 0);
   const status = {

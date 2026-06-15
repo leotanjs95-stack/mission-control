@@ -8,7 +8,7 @@
   :root{
     --bg:#070a10; --panel:#0e131c; --panel2:#121927; --line:#1e2838;
     --text:#e7edf6; --muted:#8a98ad;
-    --gem:#2dd4bf; --cher:#60a5fa; --nova:#34d399; --pj:#a78bfa;
+    --gem:#2dd4bf; --cher:#60a5fa; --nova:#34d399; --pj:#a78bfa; --warren:#fb923c;
     --ok:#34d399; --warn:#fbbf24; --down:#f87171;
   }
   *{box-sizing:border-box;margin:0;padding:0}
@@ -33,9 +33,10 @@
     letter-spacing:1.2px;text-transform:uppercase}
   .ops .dot{width:8px;height:8px;border-radius:50%;animation:pulse 1.8s infinite}
   @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
-  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-  @media(max-width:1080px){.grid{grid-template-columns:repeat(2,1fr)}}
-  @media(max-width:560px){.grid{grid-template-columns:1fr}}
+  .grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+  @media(max-width:1180px){.grid{grid-template-columns:repeat(3,1fr)}}
+  @media(max-width:780px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:520px){.grid{grid-template-columns:1fr}}
   .card{position:relative;background:linear-gradient(180deg,var(--panel2),var(--panel));
     border:1px solid var(--line);border-radius:18px;padding:22px 20px 20px;overflow:hidden;
     transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
@@ -149,7 +150,7 @@
 </div>
 
 <script>
-const ACCENT = { gem:'#2dd4bf', cher:'#60a5fa', nova:'#34d399', pj:'#a78bfa' };
+const ACCENT = { gem:'#2dd4bf', cher:'#60a5fa', nova:'#34d399', pj:'#a78bfa', warren:'#fb923c' };
 const HEALTH = { ok:{c:'var(--ok)',t:'Healthy'}, warn:{c:'var(--warn)',t:'Busy'}, down:{c:'var(--down)',t:'Attention'} };
 
 function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
