@@ -1,0 +1,227 @@
+{
+  "generatedAt": "2026-06-15T05:07:02.116Z",
+  "totals": {
+    "agentsOnline": 4,
+    "leads": 567,
+    "scrapes": 12,
+    "automations": 2
+  },
+  "agents": [
+    {
+      "health": "ok",
+      "healthNote": "Scheduled & armed",
+      "trend": [],
+      "activity": [],
+      "id": "gem",
+      "name": "Gem",
+      "role": "Meta Agent",
+      "skill": "Meta Ads Reporting",
+      "accent": "gem",
+      "mode": "auto",
+      "modeLabel": "⚡ Auto · weekly",
+      "status": "Live",
+      "metrics": [
+        {
+          "k": "Schedule",
+          "v": "Weekly · Fri 1:30 PM SGT"
+        },
+        {
+          "k": "Channels",
+          "v": "3 Lark groups"
+        },
+        {
+          "k": "Accounts",
+          "v": "Catalyst Outsourcing"
+        },
+        {
+          "k": "Output",
+          "v": "SCALE / PAUSE / FIX"
+        }
+      ]
+    },
+    {
+      "health": "ok",
+      "healthNote": "Ready on request",
+      "trend": [],
+      "activity": [],
+      "id": "cher",
+      "name": "Cher",
+      "role": "Google Ads",
+      "skill": "Google Ads Reporting",
+      "accent": "cher",
+      "mode": "ond",
+      "modeLabel": "✋ On-demand · ask Claude",
+      "status": "Ready",
+      "metrics": [
+        {
+          "k": "Output",
+          "v": "KPIs + recommendations"
+        },
+        {
+          "k": "Channel",
+          "v": "Lark"
+        },
+        {
+          "k": "Scope",
+          "v": "Search · PMax"
+        },
+        {
+          "k": "Run it",
+          "v": "\"Cher, pull this week\""
+        }
+      ]
+    },
+    {
+      "id": "nova",
+      "name": "Nova",
+      "role": "Lead Generation",
+      "skill": "Lead Scraper",
+      "accent": "nova",
+      "mode": "auto",
+      "modeLabel": "⚡ Auto · every 5 min",
+      "status": "Live",
+      "health": "ok",
+      "healthNote": "All scrapes flowing",
+      "metrics": [
+        {
+          "k": "Leads captured",
+          "v": "567"
+        },
+        {
+          "k": "Completed scrapes",
+          "v": "12"
+        },
+        {
+          "k": "Running now",
+          "v": "0"
+        },
+        {
+          "k": "Last scrape",
+          "v": "2h ago"
+        }
+      ],
+      "trend": [
+        {
+          "date": "2026-06-02",
+          "count": 0
+        },
+        {
+          "date": "2026-06-03",
+          "count": 0
+        },
+        {
+          "date": "2026-06-04",
+          "count": 0
+        },
+        {
+          "date": "2026-06-05",
+          "count": 0
+        },
+        {
+          "date": "2026-06-06",
+          "count": 0
+        },
+        {
+          "date": "2026-06-07",
+          "count": 0
+        },
+        {
+          "date": "2026-06-08",
+          "count": 0
+        },
+        {
+          "date": "2026-06-09",
+          "count": 0
+        },
+        {
+          "date": "2026-06-10",
+          "count": 0
+        },
+        {
+          "date": "2026-06-11",
+          "count": 0
+        },
+        {
+          "date": "2026-06-12",
+          "count": 0
+        },
+        {
+          "date": "2026-06-13",
+          "count": 0
+        },
+        {
+          "date": "2026-06-14",
+          "count": 0
+        },
+        {
+          "date": "2026-06-15",
+          "count": 65
+        }
+      ],
+      "activity": [
+        {
+          "text": "financial advisors · Singapore → 46 leads",
+          "when": "2h ago",
+          "status": "completed"
+        },
+        {
+          "text": "property agents · Singapore → 19 leads",
+          "when": "3h ago",
+          "status": "completed"
+        },
+        {
+          "text": "pet grooming · Singapore → 17 leads",
+          "when": "82d ago",
+          "status": "completed"
+        },
+        {
+          "text": "dental clinic · Singapore → 0 leads",
+          "when": "82d ago",
+          "status": "completed"
+        },
+        {
+          "text": "dental clinic · Singapore → 0 leads",
+          "when": "82d ago",
+          "status": "completed"
+        },
+        {
+          "text": "dental clinic · Singapore → 1 leads",
+          "when": "84d ago",
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "health": "ok",
+      "healthNote": "Ready on request",
+      "trend": [],
+      "activity": [],
+      "id": "pj",
+      "name": "PJ",
+      "role": "Video Editor",
+      "skill": "Higgsfield Studio",
+      "accent": "pj",
+      "mode": "ond",
+      "modeLabel": "✋ On-demand · ask Claude",
+      "status": "Ready",
+      "metrics": [
+        {
+          "k": "Capabilities",
+          "v": "Image · Video · Audio"
+        },
+        {
+          "k": "Engine",
+          "v": "Higgsfield Soul"
+        },
+        {
+          "k": "Extras",
+          "v": "Virality predictor"
+        },
+        {
+          "k": "Run it",
+          "v": "\"PJ, make a 9:16 ad\""
+        }
+      ]
+    }
+  ]
+}
