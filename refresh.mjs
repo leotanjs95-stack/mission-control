@@ -91,16 +91,51 @@ function staticAgent(cfg) {
     trend: [], activity: [], ...cfg };
 }
 
-const gem = staticAgent({
-  id: "gem", name: "Gem", role: "Meta Agent", skill: "Meta Ads Reporting", accent: "gem",
-  mode: "auto", modeLabel: "⚡ Auto · weekly", status: "Live",
-  metrics: [
-    { k: "Schedule", v: "Weekly · Fri 1:30 PM SGT" },
-    { k: "Channels", v: "3 Lark groups" },
-    { k: "Accounts", v: "Catalyst Outsourcing" },
-    { k: "Output", v: "SCALE / PAUSE / FIX" },
-  ],
-});
+// ---- Gem: live from GitHub Actions run history (meta-ads-monitor repo) ----
+const GH_TOKEN = process.env.GH_READ_TOKEN;
+const META_REPO = "leotanjs95-stack/meta-ads-monitor";
+
+async function buildGem() {
+  const base = staticAgent({
+    id: "gem", name: "Gem", role: "Meta Agent", skill: "Meta Ads Reporting", accent: "gem",
+    mode: "auto", modeLabel: "⚡ Auto · weekly", status: "Live",
+    metrics: [
+      { k: "Schedule", v: "Weekly · Fri 1:30 PM SGT" },
+      { k: "Channels", v: "3 Lark groups" },
+      { k: "Accounts", v: "Catalyst Outsourcing" },
+      { k: "Output", v: "SCALE / PAUSE / FIX" },
+    ],
+  });
+  if (!GH_TOKEN) return base; // no token yet → keep configured status
+  try {
+    const r = await fetch(`https://api.github.com/repos/${META_REPO}/actions/runs?per_page=20`, {
+      headers: { Authorization: `Bearer ${GH_TOKEN}`, Accept: "application/vnd.github+json" },
+    });
+    if (!r.ok) throw new Error(`GitHub API ${r.status}`);
+    const runs = (await r.json()).workflow_runs || [];
+    // prefer the Catalyst report workflow; fall back to most recent run
+    const run = runs.find((x) => /catalyst/i.test(x.name || "")) || runs[0];
+    if (!run) return base;
+    const ok = run.conclusion === "success";
+    base.health = ok ? "ok" : "down";
+    base.healthNote = ok ? "Last report sent OK" : `Last report ${run.conclusion || run.status}`;
+    base.status = run.status === "in_progress" ? "Working" : "Live";
+    base.metrics = [
+      { k: "Last report", v: humanAgo(run.run_started_at || run.created_at) },
+      { k: "Last result", v: ok ? "✅ Sent" : `⚠️ ${run.conclusion || run.status}` },
+      { k: "Channels", v: "3 Lark groups" },
+      { k: "Accounts", v: "Catalyst Outsourcing" },
+    ];
+    base.activity = runs.slice(0, 4).map((x) => ({
+      text: `${x.name} → ${x.conclusion || x.status}`,
+      when: humanAgo(x.run_started_at || x.created_at),
+      status: x.conclusion === "success" ? "completed" : x.conclusion ? "failed" : "scraping",
+    }));
+  } catch (e) {
+    base.healthNote = "Run history unavailable";
+  }
+  return base;
+}
 const cher = staticAgent({
   id: "cher", name: "Cher", role: "Google Ads", skill: "Google Ads Reporting", accent: "cher",
   mode: "ond", modeLabel: "✋ On-demand · ask Claude", status: "Ready",
@@ -123,7 +158,7 @@ const pj = staticAgent({
 });
 
 (async () => {
-  const nova = await buildNova();
+  const [gem, nova] = await Promise.all([buildGem(), buildNova()]);
   const agents = [gem, cher, nova, pj];
   const novaLeads = Number(nova.metrics?.find((m) => m.k === "Leads captured")?.v || 0);
   const novaScrapes = Number(nova.metrics?.find((m) => m.k === "Completed scrapes")?.v || 0);
