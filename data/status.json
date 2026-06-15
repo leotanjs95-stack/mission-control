@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T05:29:40.113Z",
+  "generatedAt": "2026-06-15T05:33:33.898Z",
   "totals": {
     "agentsOnline": 4,
     "leads": 567,
@@ -9,30 +9,9 @@
   "agents": [
     {
       "health": "ok",
-      "healthNote": "Last report sent OK",
+      "healthNote": "Scheduled & armed",
       "trend": [],
-      "activity": [
-        {
-          "text": "Meta Ads Monitor → success",
-          "when": "21h ago",
-          "status": "completed"
-        },
-        {
-          "text": "Meta Ads Monitor — Catalyst → success",
-          "when": "21h ago",
-          "status": "completed"
-        },
-        {
-          "text": "Meta Ads Monitor → success",
-          "when": "2d ago",
-          "status": "completed"
-        },
-        {
-          "text": "Meta Ads Monitor — Catalyst → success",
-          "when": "2d ago",
-          "status": "completed"
-        }
-      ],
+      "activity": [],
       "id": "gem",
       "name": "Gem",
       "role": "Meta Agent",
@@ -43,12 +22,8 @@
       "status": "Live",
       "metrics": [
         {
-          "k": "Last report",
-          "v": "21h ago"
-        },
-        {
-          "k": "Last result",
-          "v": "✅ Sent"
+          "k": "Schedule",
+          "v": "Weekly · Fri 1:30 PM SGT"
         },
         {
           "k": "Channels",
@@ -57,6 +32,10 @@
         {
           "k": "Accounts",
           "v": "Catalyst Outsourcing"
+        },
+        {
+          "k": "Output",
+          "v": "SCALE / PAUSE / FIX"
         }
       ]
     },
