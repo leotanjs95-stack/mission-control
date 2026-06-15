@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T06:21:56.161Z",
+  "generatedAt": "2026-06-15T06:22:20.100Z",
   "totals": {
     "agentsOnline": 5,
     "leads": 567,
@@ -62,30 +62,9 @@
     },
     {
       "health": "ok",
-      "healthNote": "Last report sent OK",
+      "healthNote": "Run history unavailable",
       "trend": [],
-      "activity": [
-        {
-          "text": "Weekly Google Ads Report → success",
-          "when": "3d ago",
-          "status": "completed"
-        },
-        {
-          "text": "Weekly Google Ads Report → success",
-          "when": "10d ago",
-          "status": "completed"
-        },
-        {
-          "text": "Weekly Google Ads Report → success",
-          "when": "17d ago",
-          "status": "completed"
-        },
-        {
-          "text": "Weekly Google Ads Report → success",
-          "when": "24d ago",
-          "status": "completed"
-        }
-      ],
+      "activity": [],
       "id": "cher",
       "name": "Cher",
       "role": "Google Ads",
@@ -96,12 +75,12 @@
       "status": "Live",
       "metrics": [
         {
-          "k": "Last report",
-          "v": "3d ago"
+          "k": "Schedule",
+          "v": "Weekly report"
         },
         {
-          "k": "Last result",
-          "v": "✅ Sent"
+          "k": "Output",
+          "v": "KPIs + recommendations"
         },
         {
           "k": "Channel",
