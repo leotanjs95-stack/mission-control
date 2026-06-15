@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-15T06:16:49.940Z",
+  "generatedAt": "2026-06-15T06:21:56.161Z",
   "totals": {
     "agentsOnline": 5,
     "leads": 567,
     "scrapes": 12,
-    "automations": 2
+    "automations": 3
   },
   "agents": [
     {
@@ -62,21 +62,46 @@
     },
     {
       "health": "ok",
-      "healthNote": "Ready on request",
+      "healthNote": "Last report sent OK",
       "trend": [],
-      "activity": [],
+      "activity": [
+        {
+          "text": "Weekly Google Ads Report → success",
+          "when": "3d ago",
+          "status": "completed"
+        },
+        {
+          "text": "Weekly Google Ads Report → success",
+          "when": "10d ago",
+          "status": "completed"
+        },
+        {
+          "text": "Weekly Google Ads Report → success",
+          "when": "17d ago",
+          "status": "completed"
+        },
+        {
+          "text": "Weekly Google Ads Report → success",
+          "when": "24d ago",
+          "status": "completed"
+        }
+      ],
       "id": "cher",
       "name": "Cher",
       "role": "Google Ads",
       "skill": "Google Ads Reporting",
       "accent": "cher",
-      "mode": "ond",
-      "modeLabel": "✋ On-demand · ask Claude",
-      "status": "Ready",
+      "mode": "auto",
+      "modeLabel": "⚡ Auto · weekly",
+      "status": "Live",
       "metrics": [
         {
-          "k": "Output",
-          "v": "KPIs + recommendations"
+          "k": "Last report",
+          "v": "3d ago"
+        },
+        {
+          "k": "Last result",
+          "v": "✅ Sent"
         },
         {
           "k": "Channel",
@@ -85,10 +110,6 @@
         {
           "k": "Scope",
           "v": "Search · PMax"
-        },
-        {
-          "k": "Run it",
-          "v": "\"Cher, pull this week\""
         }
       ]
     },

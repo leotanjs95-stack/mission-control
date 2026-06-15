@@ -91,40 +91,27 @@ function staticAgent(cfg) {
     trend: [], activity: [], ...cfg };
 }
 
-// ---- Gem: live from GitHub Actions run history (meta-ads-monitor repo) ----
+// ---- GitHub-Actions-backed agents (Gem, Cher): live run status from a repo ----
 const GH_TOKEN = process.env.GH_READ_TOKEN;
-const META_REPO = "leotanjs95-stack/meta-ads-monitor";
 
-async function buildGem() {
-  const base = staticAgent({
-    id: "gem", name: "Gem", role: "Meta Agent", skill: "Meta Ads Reporting", accent: "gem",
-    mode: "auto", modeLabel: "⚡ Auto · weekly", status: "Live",
-    metrics: [
-      { k: "Schedule", v: "Weekly · Fri 1:30 PM SGT" },
-      { k: "Channels", v: "3 Lark groups" },
-      { k: "Accounts", v: "Catalyst Outsourcing" },
-      { k: "Output", v: "SCALE / PAUSE / FIX" },
-    ],
-  });
-  if (!GH_TOKEN) return base; // no token yet → keep configured status
+async function buildFromActions(base, repo, opts = {}) {
+  if (!GH_TOKEN) return base; // no token / no access → keep configured status
   try {
-    const r = await fetch(`https://api.github.com/repos/${META_REPO}/actions/runs?per_page=20`, {
+    const r = await fetch(`https://api.github.com/repos/${repo}/actions/runs?per_page=20`, {
       headers: { Authorization: `Bearer ${GH_TOKEN}`, Accept: "application/vnd.github+json" },
     });
     if (!r.ok) throw new Error(`GitHub API ${r.status}`);
     const runs = (await r.json()).workflow_runs || [];
-    // prefer the Catalyst report workflow; fall back to most recent run
-    const run = runs.find((x) => /catalyst/i.test(x.name || "")) || runs[0];
+    const run = (opts.prefer ? runs.find((x) => opts.prefer.test(x.name || "")) : null) || runs[0];
     if (!run) return base;
     const ok = run.conclusion === "success";
     base.health = ok ? "ok" : "down";
-    base.healthNote = ok ? "Last report sent OK" : `Last report ${run.conclusion || run.status}`;
+    base.healthNote = ok ? (opts.okNote || "Last run OK") : `Last run ${run.conclusion || run.status}`;
     base.status = run.status === "in_progress" ? "Working" : "Live";
     base.metrics = [
-      { k: "Last report", v: humanAgo(run.run_started_at || run.created_at) },
+      { k: opts.lastLabel || "Last run", v: humanAgo(run.run_started_at || run.created_at) },
       { k: "Last result", v: ok ? "✅ Sent" : `⚠️ ${run.conclusion || run.status}` },
-      { k: "Channels", v: "3 Lark groups" },
-      { k: "Accounts", v: "Catalyst Outsourcing" },
+      ...(opts.extraMetrics || []),
     ];
     base.activity = runs.slice(0, 4).map((x) => ({
       text: `${x.name} → ${x.conclusion || x.status}`,
@@ -136,16 +123,40 @@ async function buildGem() {
   }
   return base;
 }
-const cher = staticAgent({
-  id: "cher", name: "Cher", role: "Google Ads", skill: "Google Ads Reporting", accent: "cher",
-  mode: "ond", modeLabel: "✋ On-demand · ask Claude", status: "Ready",
-  metrics: [
-    { k: "Output", v: "KPIs + recommendations" },
-    { k: "Channel", v: "Lark" },
-    { k: "Scope", v: "Search · PMax" },
-    { k: "Run it", v: '"Cher, pull this week"' },
-  ],
-});
+
+function buildGem() {
+  const base = staticAgent({
+    id: "gem", name: "Gem", role: "Meta Agent", skill: "Meta Ads Reporting", accent: "gem",
+    mode: "auto", modeLabel: "⚡ Auto · weekly", status: "Live",
+    metrics: [
+      { k: "Schedule", v: "Weekly · Fri 1:30 PM SGT" },
+      { k: "Channels", v: "3 Lark groups" },
+      { k: "Accounts", v: "Catalyst Outsourcing" },
+      { k: "Output", v: "SCALE / PAUSE / FIX" },
+    ],
+  });
+  return buildFromActions(base, "leotanjs95-stack/meta-ads-monitor", {
+    prefer: /catalyst/i, okNote: "Last report sent OK", lastLabel: "Last report",
+    extraMetrics: [{ k: "Channels", v: "3 Lark groups" }, { k: "Accounts", v: "Catalyst Outsourcing" }],
+  });
+}
+
+function buildCher() {
+  const base = staticAgent({
+    id: "cher", name: "Cher", role: "Google Ads", skill: "Google Ads Reporting", accent: "cher",
+    mode: "auto", modeLabel: "⚡ Auto · weekly", status: "Live",
+    metrics: [
+      { k: "Schedule", v: "Weekly report" },
+      { k: "Output", v: "KPIs + recommendations" },
+      { k: "Channel", v: "Lark" },
+      { k: "Scope", v: "Search · PMax" },
+    ],
+  });
+  return buildFromActions(base, "leotanjs95-stack/google-ads-reporter", {
+    okNote: "Last report sent OK", lastLabel: "Last report",
+    extraMetrics: [{ k: "Channel", v: "Lark" }, { k: "Scope", v: "Search · PMax" }],
+  });
+}
 const pj = staticAgent({
   id: "pj", name: "PJ", role: "Video Editor", skill: "Higgsfield Studio", accent: "pj",
   mode: "ond", modeLabel: "✋ On-demand · ask Claude", status: "Ready",
@@ -168,7 +179,7 @@ const warren = staticAgent({
 });
 
 (async () => {
-  const [gem, nova] = await Promise.all([buildGem(), buildNova()]);
+  const [gem, cher, nova] = await Promise.all([buildGem(), buildCher(), buildNova()]);
   const agents = [gem, cher, nova, pj, warren];
   const novaLeads = Number(nova.metrics?.find((m) => m.k === "Leads captured")?.v || 0);
   const novaScrapes = Number(nova.metrics?.find((m) => m.k === "Completed scrapes")?.v || 0);
