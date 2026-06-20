@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-20T12:59:01.092Z",
+  "generatedAt": "2026-06-20T15:05:07.241Z",
   "totals": {
     "agentsOnline": 5,
     "leads": 567,
@@ -14,12 +14,12 @@
       "activity": [
         {
           "text": "Meta Ads Monitor → success",
-          "when": "5h ago",
+          "when": "7h ago",
           "status": "completed"
         },
         {
           "text": "Meta Ads Monitor — Catalyst → success",
-          "when": "5h ago",
+          "when": "7h ago",
           "status": "completed"
         },
         {
@@ -44,7 +44,7 @@
       "metrics": [
         {
           "k": "Last report",
-          "v": "5h ago"
+          "v": "7h ago"
         },
         {
           "k": "Last result",
@@ -192,7 +192,7 @@
         },
         {
           "text": "property agents · Singapore → 19 leads",
-          "when": "5d ago",
+          "when": "6d ago",
           "status": "completed"
         },
         {
@@ -207,7 +207,7 @@
         },
         {
           "text": "dental clinic · Singapore → 0 leads",
-          "when": "87d ago",
+          "when": "88d ago",
           "status": "completed"
         }
       ]
