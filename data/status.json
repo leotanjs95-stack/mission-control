@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-23T01:28:46.702Z",
+  "generatedAt": "2026-06-23T05:44:04.266Z",
   "totals": {
     "agentsOnline": 5,
     "leads": 567,
@@ -14,12 +14,12 @@
       "activity": [
         {
           "text": "Meta Ads Monitor → success",
-          "when": "15h ago",
+          "when": "19h ago",
           "status": "completed"
         },
         {
           "text": "Meta Ads Monitor — Catalyst → success",
-          "when": "15h ago",
+          "when": "19h ago",
           "status": "completed"
         },
         {
@@ -44,7 +44,7 @@
       "metrics": [
         {
           "k": "Last report",
-          "v": "15h ago"
+          "v": "19h ago"
         },
         {
           "k": "Last result",
@@ -197,12 +197,12 @@
         },
         {
           "text": "pet grooming · Singapore → 17 leads",
-          "when": "89d ago",
+          "when": "90d ago",
           "status": "completed"
         },
         {
           "text": "dental clinic · Singapore → 0 leads",
-          "when": "89d ago",
+          "when": "90d ago",
           "status": "completed"
         },
         {
