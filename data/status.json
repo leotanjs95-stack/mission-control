@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T18:30:52.834Z",
+  "generatedAt": "2026-06-25T20:35:06.501Z",
   "totals": {
     "agentsOnline": 5,
     "leads": 567,
@@ -14,22 +14,22 @@
       "activity": [
         {
           "text": "Meta Ads Monitor → success",
-          "when": "10h ago",
+          "when": "12h ago",
           "status": "completed"
         },
         {
           "text": "Meta Ads Monitor — Catalyst → success",
-          "when": "10h ago",
+          "when": "12h ago",
           "status": "completed"
         },
         {
           "text": "Meta Ads Monitor → success",
-          "when": "1d ago",
+          "when": "2d ago",
           "status": "completed"
         },
         {
           "text": "Meta Ads Monitor — Catalyst → success",
-          "when": "1d ago",
+          "when": "2d ago",
           "status": "completed"
         }
       ],
@@ -44,7 +44,7 @@
       "metrics": [
         {
           "k": "Last report",
-          "v": "10h ago"
+          "v": "12h ago"
         },
         {
           "k": "Last result",
@@ -118,7 +118,7 @@
         },
         {
           "k": "Last scrape",
-          "v": "10d ago"
+          "v": "11d ago"
         }
       ],
       "trend": [
@@ -182,7 +182,7 @@
       "activity": [
         {
           "text": "LinkedIn: financial advisor · Singapore → failed",
-          "when": "10d ago",
+          "when": "11d ago",
           "status": "failed"
         },
         {
