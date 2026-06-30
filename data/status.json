@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T11:57:35.379Z",
+  "generatedAt": "2026-06-30T14:20:53.185Z",
   "totals": {
     "agentsOnline": 5,
     "leads": 567,
@@ -14,12 +14,12 @@
       "activity": [
         {
           "text": "Meta Ads Monitor → success",
-          "when": "3h ago",
+          "when": "6h ago",
           "status": "completed"
         },
         {
           "text": "Meta Ads Monitor — Catalyst → success",
-          "when": "3h ago",
+          "when": "6h ago",
           "status": "completed"
         },
         {
@@ -44,7 +44,7 @@
       "metrics": [
         {
           "k": "Last report",
-          "v": "3h ago"
+          "v": "6h ago"
         },
         {
           "k": "Last result",
@@ -192,7 +192,7 @@
         },
         {
           "text": "property agents · Singapore → 19 leads",
-          "when": "15d ago",
+          "when": "16d ago",
           "status": "completed"
         },
         {
