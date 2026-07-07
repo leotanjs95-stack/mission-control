@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T08:53:47.484Z",
+  "generatedAt": "2026-07-07T11:42:24.054Z",
   "totals": {
     "agentsOnline": 5,
     "leads": 567,
@@ -14,22 +14,22 @@
       "activity": [
         {
           "text": "Meta Ads Monitor → success",
-          "when": "26m ago",
+          "when": "3h ago",
           "status": "completed"
         },
         {
           "text": "Meta Ads Monitor — Catalyst → success",
-          "when": "28m ago",
+          "when": "3h ago",
           "status": "completed"
         },
         {
           "text": "Meta Ads Monitor → success",
-          "when": "24h ago",
+          "when": "1d ago",
           "status": "completed"
         },
         {
           "text": "Meta Ads Monitor — Catalyst → success",
-          "when": "24h ago",
+          "when": "1d ago",
           "status": "completed"
         }
       ],
@@ -44,7 +44,7 @@
       "metrics": [
         {
           "k": "Last report",
-          "v": "28m ago"
+          "v": "3h ago"
         },
         {
           "k": "Last result",
