@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-08T14:39:23.097Z",
+  "generatedAt": "2026-07-08T16:20:13.852Z",
   "totals": {
     "agentsOnline": 5,
     "leads": 567,
@@ -14,12 +14,12 @@
       "activity": [
         {
           "text": "Meta Ads Monitor → success",
-          "when": "7h ago",
+          "when": "9h ago",
           "status": "completed"
         },
         {
           "text": "Meta Ads Monitor — Catalyst → success",
-          "when": "7h ago",
+          "when": "9h ago",
           "status": "completed"
         },
         {
@@ -44,7 +44,7 @@
       "metrics": [
         {
           "k": "Last report",
-          "v": "7h ago"
+          "v": "9h ago"
         },
         {
           "k": "Last result",
@@ -187,7 +187,7 @@
         },
         {
           "text": "financial advisors · Singapore → 46 leads",
-          "when": "23d ago",
+          "when": "24d ago",
           "status": "completed"
         },
         {
