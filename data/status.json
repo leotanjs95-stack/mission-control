@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T14:02:27.604Z",
+  "generatedAt": "2026-07-09T16:39:26.912Z",
   "totals": {
     "agentsOnline": 5,
     "leads": 567,
@@ -14,12 +14,12 @@
       "activity": [
         {
           "text": "Meta Ads Monitor → success",
-          "when": "5h ago",
+          "when": "8h ago",
           "status": "completed"
         },
         {
           "text": "Meta Ads Monitor — Catalyst → success",
-          "when": "6h ago",
+          "when": "8h ago",
           "status": "completed"
         },
         {
@@ -44,7 +44,7 @@
       "metrics": [
         {
           "k": "Last report",
-          "v": "6h ago"
+          "v": "8h ago"
         },
         {
           "k": "Last result",
@@ -187,12 +187,12 @@
         },
         {
           "text": "financial advisors · Singapore → 46 leads",
-          "when": "24d ago",
+          "when": "25d ago",
           "status": "completed"
         },
         {
           "text": "property agents · Singapore → 19 leads",
-          "when": "24d ago",
+          "when": "25d ago",
           "status": "completed"
         },
         {
@@ -207,7 +207,7 @@
         },
         {
           "text": "dental clinic · Singapore → 0 leads",
-          "when": "106d ago",
+          "when": "107d ago",
           "status": "completed"
         }
       ]
