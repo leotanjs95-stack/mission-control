@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T13:01:14.704Z",
+  "generatedAt": "2026-07-16T15:12:37.324Z",
   "totals": {
     "agentsOnline": 5,
     "leads": 567,
@@ -171,7 +171,7 @@
         },
         {
           "text": "property agents · Singapore → 19 leads",
-          "when": "31d ago",
+          "when": "32d ago",
           "status": "completed"
         },
         {
@@ -186,7 +186,7 @@
         },
         {
           "text": "dental clinic · Singapore → 0 leads",
-          "when": "113d ago",
+          "when": "114d ago",
           "status": "completed"
         }
       ]
