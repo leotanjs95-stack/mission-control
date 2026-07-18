@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T14:30:43.715Z",
+  "generatedAt": "2026-07-18T15:36:32.462Z",
   "totals": {
     "agentsOnline": 5,
     "leads": 567,
@@ -166,7 +166,7 @@
         },
         {
           "text": "financial advisors · Singapore → 46 leads",
-          "when": "33d ago",
+          "when": "34d ago",
           "status": "completed"
         },
         {
@@ -186,7 +186,7 @@
         },
         {
           "text": "dental clinic · Singapore → 0 leads",
-          "when": "115d ago",
+          "when": "116d ago",
           "status": "completed"
         }
       ]
