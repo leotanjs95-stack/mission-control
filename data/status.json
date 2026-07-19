@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-19T19:51:10.204Z",
+  "generatedAt": "2026-07-19T20:39:46.123Z",
   "totals": {
     "agentsOnline": 5,
     "leads": 567,
@@ -97,7 +97,7 @@
         },
         {
           "k": "Last scrape",
-          "v": "34d ago"
+          "v": "35d ago"
         }
       ],
       "trend": [
@@ -161,7 +161,7 @@
       "activity": [
         {
           "text": "LinkedIn: financial advisor · Singapore → failed",
-          "when": "34d ago",
+          "when": "35d ago",
           "status": "failed"
         },
         {
