@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21T04:30:18.014Z",
+  "generatedAt": "2026-07-21T07:18:21.460Z",
   "totals": {
     "agentsOnline": 5,
     "leads": 567,
@@ -79,9 +79,9 @@
       "accent": "nova",
       "mode": "auto",
       "modeLabel": "⚡ Auto · every 5 min",
-      "status": "Live",
-      "health": "ok",
-      "healthNote": "All scrapes flowing",
+      "status": "Working",
+      "health": "down",
+      "healthNote": "1 scrape(s) stuck >20m",
       "metrics": [
         {
           "k": "Leads captured",
@@ -93,11 +93,11 @@
         },
         {
           "k": "Running now",
-          "v": "0"
+          "v": "3"
         },
         {
           "k": "Last scrape",
-          "v": "36d ago"
+          "v": "11m ago"
         }
       ],
       "trend": [
@@ -160,6 +160,21 @@
       ],
       "activity": [
         {
+          "text": "Apollo: financial advisors · Singapore → scraping",
+          "when": "11m ago",
+          "status": "scraping"
+        },
+        {
+          "text": "Apollo: financial advisors · Singapore → scraping",
+          "when": "11m ago",
+          "status": "scraping"
+        },
+        {
+          "text": "Apollo: financial advisors · Singapore → scraping",
+          "when": "35m ago",
+          "status": "scraping"
+        },
+        {
           "text": "LinkedIn: financial advisor · Singapore → failed",
           "when": "36d ago",
           "status": "failed"
@@ -172,21 +187,6 @@
         {
           "text": "property agents · Singapore → 19 leads",
           "when": "36d ago",
-          "status": "completed"
-        },
-        {
-          "text": "pet grooming · Singapore → 17 leads",
-          "when": "118d ago",
-          "status": "completed"
-        },
-        {
-          "text": "dental clinic · Singapore → 0 leads",
-          "when": "118d ago",
-          "status": "completed"
-        },
-        {
-          "text": "dental clinic · Singapore → 0 leads",
-          "when": "118d ago",
           "status": "completed"
         }
       ]
