@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21T23:10:21.405Z",
+  "generatedAt": "2026-07-22T00:04:46.313Z",
   "totals": {
     "agentsOnline": 5,
     "leads": 567,
@@ -97,14 +97,10 @@
         },
         {
           "k": "Last scrape",
-          "v": "15h ago"
+          "v": "16h ago"
         }
       ],
       "trend": [
-        {
-          "date": "2026-07-08",
-          "count": 0
-        },
         {
           "date": "2026-07-09",
           "count": 0
@@ -156,37 +152,41 @@
         {
           "date": "2026-07-21",
           "count": 0
+        },
+        {
+          "date": "2026-07-22",
+          "count": 0
         }
       ],
       "activity": [
         {
           "text": "Apollo: financial advisors · Singapore → scraping",
-          "when": "15h ago",
-          "status": "scraping"
-        },
-        {
-          "text": "Apollo: financial advisors · Singapore → scraping",
-          "when": "15h ago",
-          "status": "scraping"
-        },
-        {
-          "text": "Apollo: financial advisors · Singapore → scraping",
-          "when": "15h ago",
-          "status": "scraping"
-        },
-        {
-          "text": "Apollo: financial advisors · Singapore → scraping",
-          "when": "15h ago",
-          "status": "scraping"
-        },
-        {
-          "text": "Apollo: financial advisors · Singapore → scraping",
-          "when": "15h ago",
+          "when": "16h ago",
           "status": "scraping"
         },
         {
           "text": "Apollo: financial advisors · Singapore → scraping",
           "when": "16h ago",
+          "status": "scraping"
+        },
+        {
+          "text": "Apollo: financial advisors · Singapore → scraping",
+          "when": "16h ago",
+          "status": "scraping"
+        },
+        {
+          "text": "Apollo: financial advisors · Singapore → scraping",
+          "when": "16h ago",
+          "status": "scraping"
+        },
+        {
+          "text": "Apollo: financial advisors · Singapore → scraping",
+          "when": "16h ago",
+          "status": "scraping"
+        },
+        {
+          "text": "Apollo: financial advisors · Singapore → scraping",
+          "when": "17h ago",
           "status": "scraping"
         }
       ]
