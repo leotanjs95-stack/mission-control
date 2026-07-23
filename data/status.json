@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-23T01:11:06.159Z",
+  "generatedAt": "2026-07-23T04:32:53.747Z",
   "totals": {
     "agentsOnline": 5,
     "leads": 660,
@@ -97,7 +97,7 @@
         },
         {
           "k": "Last scrape",
-          "v": "21h ago"
+          "v": "24h ago"
         }
       ],
       "trend": [
@@ -161,32 +161,32 @@
       "activity": [
         {
           "text": "Apollo: business owner · Singapore → 25 leads",
-          "when": "21h ago",
+          "when": "24h ago",
           "status": "completed"
         },
         {
           "text": "Apollo: financial advisors · Singapore → 18 leads",
-          "when": "22h ago",
+          "when": "1d ago",
           "status": "completed"
         },
         {
           "text": "Apollo: financial advisors · Singapore → scraping",
-          "when": "22h ago",
+          "when": "1d ago",
           "status": "scraping"
         },
         {
           "text": "Apollo: financial advisor · Singapore → scraping",
-          "when": "22h ago",
+          "when": "1d ago",
           "status": "scraping"
         },
         {
           "text": "Apollo: insurance agent · Singapore → 25 leads",
-          "when": "23h ago",
+          "when": "1d ago",
           "status": "completed"
         },
         {
           "text": "Apollo: financial advisors · Singapore → 25 leads",
-          "when": "23h ago",
+          "when": "1d ago",
           "status": "completed"
         }
       ]
