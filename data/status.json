@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-27T15:57:17.205Z",
+  "generatedAt": "2026-07-27T17:42:14.227Z",
   "totals": {
     "agentsOnline": 5,
     "leads": 660,
@@ -97,7 +97,7 @@
         },
         {
           "k": "Last scrape",
-          "v": "5d ago"
+          "v": "6d ago"
         }
       ],
       "trend": [
@@ -161,7 +161,7 @@
       "activity": [
         {
           "text": "Apollo: business owner · Singapore → 25 leads",
-          "when": "5d ago",
+          "when": "6d ago",
           "status": "completed"
         },
         {
