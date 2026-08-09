@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T14:40:11.027Z",
+  "generatedAt": "2026-08-09T15:05:42.742Z",
   "totals": {
     "agentsOnline": 5,
     "leads": 688,
@@ -181,12 +181,12 @@
         },
         {
           "text": "Apollo: financial advisors · Singapore → 18 leads",
-          "when": "18d ago",
+          "when": "19d ago",
           "status": "completed"
         },
         {
           "text": "Apollo: financial advisors · Singapore → scraping",
-          "when": "18d ago",
+          "when": "19d ago",
           "status": "scraping"
         }
       ]
