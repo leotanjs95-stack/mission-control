@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T15:36:20.375Z",
+  "generatedAt": "2026-08-15T15:55:31.719Z",
   "totals": {
     "agentsOnline": 5,
     "leads": 688,
@@ -97,7 +97,7 @@
         },
         {
           "k": "Last scrape",
-          "v": "18d ago"
+          "v": "19d ago"
         }
       ],
       "trend": [
@@ -161,7 +161,7 @@
       "activity": [
         {
           "text": "Apollo: interior designer · Singapore → 3 leads",
-          "when": "18d ago",
+          "when": "19d ago",
           "status": "completed"
         },
         {
