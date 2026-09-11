@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-11T17:55:00.481Z",
+  "generatedAt": "2026-09-11T20:19:20.724Z",
   "totals": {
     "agentsOnline": 5,
     "leads": 688,
-    "scrapes": 0,
+    "scrapes": 19,
     "automations": 3
   },
   "agents": [
@@ -79,9 +79,9 @@
       "accent": "nova",
       "mode": "auto",
       "modeLabel": "⚡ Auto · every 5 min",
-      "status": "Live",
-      "health": "ok",
-      "healthNote": "All scrapes flowing",
+      "status": "Working",
+      "health": "down",
+      "healthNote": "14 scrape(s) stuck >20m",
       "metrics": [
         {
           "k": "Leads captured",
@@ -89,15 +89,15 @@
         },
         {
           "k": "Completed scrapes",
-          "v": "0"
+          "v": "19"
         },
         {
           "k": "Running now",
-          "v": "0"
+          "v": "14"
         },
         {
           "k": "Last scrape",
-          "v": "—"
+          "v": "46d ago"
         }
       ],
       "trend": [
@@ -158,7 +158,38 @@
           "count": 0
         }
       ],
-      "activity": []
+      "activity": [
+        {
+          "text": "Apollo: interior designer · Singapore → 3 leads",
+          "when": "46d ago",
+          "status": "completed"
+        },
+        {
+          "text": "Apollo: interior design · Singapore → 0 leads",
+          "when": "46d ago",
+          "status": "completed"
+        },
+        {
+          "text": "Apollo: business owner · Singapore → 25 leads",
+          "when": "46d ago",
+          "status": "completed"
+        },
+        {
+          "text": "Apollo: business owner · Singapore → 25 leads",
+          "when": "52d ago",
+          "status": "completed"
+        },
+        {
+          "text": "Apollo: financial advisors · Singapore → 18 leads",
+          "when": "52d ago",
+          "status": "completed"
+        },
+        {
+          "text": "Apollo: financial advisors · Singapore → scraping",
+          "when": "52d ago",
+          "status": "scraping"
+        }
+      ]
     },
     {
       "health": "ok",
