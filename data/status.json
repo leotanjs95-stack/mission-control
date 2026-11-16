@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T11:09:37.912Z",
+  "generatedAt": "2026-11-16T21:00:07.172Z",
   "totals": {
     "agentsOnline": 5,
     "leads": 688,
@@ -97,7 +97,7 @@
         },
         {
           "k": "Last scrape",
-          "v": "111d ago"
+          "v": "112d ago"
         }
       ],
       "trend": [
@@ -161,32 +161,32 @@
       "activity": [
         {
           "text": "Apollo: interior designer · Singapore → 3 leads",
-          "when": "111d ago",
+          "when": "112d ago",
           "status": "completed"
         },
         {
           "text": "Apollo: interior design · Singapore → 0 leads",
-          "when": "111d ago",
+          "when": "112d ago",
           "status": "completed"
         },
         {
           "text": "Apollo: business owner · Singapore → 25 leads",
-          "when": "111d ago",
+          "when": "112d ago",
           "status": "completed"
         },
         {
           "text": "Apollo: business owner · Singapore → 25 leads",
-          "when": "117d ago",
+          "when": "118d ago",
           "status": "completed"
         },
         {
           "text": "Apollo: financial advisors · Singapore → 18 leads",
-          "when": "117d ago",
+          "when": "118d ago",
           "status": "completed"
         },
         {
           "text": "Apollo: financial advisors · Singapore → scraping",
-          "when": "117d ago",
+          "when": "118d ago",
           "status": "scraping"
         }
       ]
